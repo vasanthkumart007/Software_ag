@@ -1,0 +1,82 @@
+
+{
+"employee" : [
+{
+	"uid" : 1,
+	"uname": "Vasanth",
+	"uroll": "50011031",
+	"uaddress": { "temp" : "Chennai" , "perm" : "Erode" },
+	"umob" : "9698040311",
+	"usal" : 35000
+},
+{
+	"uid" : 2,
+	"uname": "Zubeir",
+	"uroll": "50011028",
+	"uaddress": { "temp" : "Erode" , "perm" : "Chennai" },
+	"umob" : "9012653387",
+	"usal" : 35000
+},
+{
+	"uid" : 3,
+	"uname": "Gokul",
+	"uroll": "50011030",
+	"uaddress": { "temp" : "Chennai" , "perm" : "Karur" },
+	"umob" : "9197332244",
+	"usal" : 23999
+},
+{
+	"uid" : 4,
+	"uname": "Sarath",
+	"uroll": "50011029",
+	"uaddress": { "temp" : "Erode" , "perm" : "Gopi" },
+	"umob" : "9942816574",
+	"usal" : 30000
+}
+],
+
+
+"manager" : [
+{
+	"mid" : 100,
+	"mname": "Siva",
+	"mroll": "MID100",
+	"maddress": { "temp" : "California" , "perm" : "NewYork" },
+	"mmob" : "1234567890",
+	"msal" : 100000
+},
+{
+	"mid" : 200,
+	"mname": "Kumar",
+	"mroll": "MID200",
+	"maddress": { "temp" : "Japan" , "perm" : "Chennai" },
+	"mmob" : "9876543210",
+	"msal" : 230000
+},
+{
+	"mid" : 300,
+	"mname": "GokulSiva",
+	"mroll": "MID300",
+	"maddress": { "temp" : "Kolkata" , "perm" : "Delhi" },
+	"mmob" : "9493225544",
+	"msal" : 44000
+},
+{
+	"mid" : 400,
+	"mname": "Sarvesh",
+	"mroll": "MID400",
+	"maddress": { "temp" : "Erode" , "perm" : "Gopi" },
+	"mmob" : "9842440932",
+	"msal" : 300000
+}
+
+]
+
+}
+
+
+
+
+
+
+

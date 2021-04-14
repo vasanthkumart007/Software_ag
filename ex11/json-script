@@ -1,0 +1,44 @@
+#!/bin/bash
+#_______________________________________#
+#Author: VASANTH
+#_______________________________________#
+#Description: To parse json
+#_______________________________________#
+#Date: Wednesday 14 April 2021 11:03:58 PM IST
+#_______________________________________#
+
+
+echo EMPLOYEE DETAILS
+sleep 0.3
+jq .employee json-database
+echo
+echo
+sleep 0.3
+echo MANAGER DETAILS
+sleep 0.3
+jq .manager json-database
+echo 
+echo
+sleep 0.3
+echo  MAXIMUM SALARY
+jq "[.employee[].usal]|max  " json-database
+echo
+echo  MINIMUM SALARY
+jq "[.employee[].usal]|min  " json-database
+echo
+echo  TOTAL SALARY
+jq "[.employee[].usal]|add  " json-database
+echo
+echo  EMPLOYEE NAMES
+jq .employee[].uname json-database
+echo
+echo EMPLOYEE TEMPORARY LOCATIONS
+jq "[.employee[].uaddress.temp] | unique " json-database
+echo
+echo EMPLOYEE PERMANENT LOCATIONS
+jq "[.employee[].uaddress.perm] | unique " json-database
+echo
+echo EMPLOYEE MOBILE NUMBERS
+jq  .employee[].umob  json-database
+echo
+
