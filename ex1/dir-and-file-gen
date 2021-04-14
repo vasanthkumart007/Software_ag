@@ -1,0 +1,19 @@
+#!/bin/bash
+#_______________________________________#
+#Author: vasanth
+#_______________________________________#
+#Description: Exercise 1
+#_______________________________________#
+#Date: Wednesday 14 April 2021 09:09:12 PM IST
+#_______________________________________#
+mkdir /home/vasanth//ps/data &> /dev/null
+touch /home/vasanth/ps/data/sample.txt &> /dev/null
+echo "THIS IS SAMPLE FILE" > /home/vasanth/ps/data/sample.txt
+echo DIRECTORY AND FILE CREATED
+
+echo DIRECTORY LISTING 
+echo
+ls -ltr | grep data
+echo 
+echo FILE CONTENTS
+more /home/vasanth/ps/data/sample.txt

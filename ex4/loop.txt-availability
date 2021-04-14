@@ -1,0 +1,28 @@
+#!/bin/bash
+#_______________________________________#
+#Author: VASANTH
+#_______________________________________#
+#Description: To check the availability of file
+#_______________________________________#
+#Date: Wednesday 14 April 2021 07:38:20 PM IST
+#_______________________________________#
+
+
+echo WHICH FILE TO CHECK
+read f
+echo SPECIFY DIRECTORY 
+read d
+l=$d/*
+
+for i in $l
+do
+if [ $i == $d/$f ]
+then
+echo Found  the file in $d/$f
+sleep 1
+echo EXITING STATUS WITH VALUE 1
+exit 1
+fi
+done
+echo FILE NOT FOUND
+

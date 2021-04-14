@@ -1,0 +1,27 @@
+#!/bin/bash
+#_______________________________________#
+#Author: VASANTH
+#_______________________________________#
+#Description: To check the availability of file EXERCISE 3
+#_______________________________________#
+#Date: Wednesday 14 April 2021 07:38:20 PM IST
+#_______________________________________#
+
+
+echo WHICH FILE TO CHECK
+read f
+f1=`find . -name $f |wc -l`
+fi=`find . -name $f`
+echo $fi
+if [ $f1 -gt 0 ]
+then 
+echo File found
+echo
+sudo cp "$fi" /tmp/found.txt
+echo
+echo CONTENTS OF /tmp/found.txt
+more /tmp/found.txt
+exit 0
+fi
+
+echo File not found

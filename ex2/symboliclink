@@ -1,0 +1,31 @@
+#!/bin/bash
+#_______________________________________#
+#Author: VASANTH
+#_______________________________________#
+#Description: EXERCISE 2
+#_______________________________________#
+#Date: Wednesday 14 April 2021 09:13:56 PM IST
+#_______________________________________#
+
+
+echo Creating link for /home/vasanth/ps/data/sample.txt in /tmp/sample.txt
+for i in {1..5}
+do 
+	echo ...
+done
+
+echo Link created
+
+ln -s  /home/vasanth/ps/data/sample.txt  /tmp/sample.txt
+
+sleep 2
+echo
+echo SYMBOLIC LINK LOCATION LISTING
+
+ls  -ltr /tmp
+
+
+echo 
+echo CONTENTS OF SOFTLINK FILE
+
+more /tmp/sample.txt
