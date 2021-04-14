@@ -1,0 +1,27 @@
+#!/bin/bash
+#_______________________________________#
+#Author: VASANTH
+#_______________________________________#
+#Description: This is the child script of parent_file
+#_______________________________________#
+#Date: Wednesday 14 April 2021 01:45:07 PM IST
+#_______________________________________#
+echo ENTER YOUR NAME
+read  n
+echo ENTER YOUR AGE
+read a
+echo ENTER YOUR ADDRRESS
+read address
+
+echo $n  \|  $a  \|  $address >> /home/vasanth/ps/database
+
+sleep 0.5
+echo " SUCCESSFULLY STORED"
+echo "---------------------"
+sleep 0.5
+echo "REDIRECTING TO PARENT PROCESS"
+echo "---------------------"
+sleep 0.5
+echo "CHILD PROCESS SAYING BYE"
+echo "---------------------"
+sleep 1

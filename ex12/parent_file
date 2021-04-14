@@ -1,0 +1,22 @@
+#!/bin/bash
+#_______________________________________#
+#Author: VASANTH
+#_______________________________________#
+#Description: This is the parent script
+#_______________________________________#
+#Date: Wednesday 14 April 2021 01:44:31 PM IST
+#_______________________________________#
+
+
+echo ENTER CHILD FILE NAME
+read ch
+/home/vasanth/ps/$ch
+
+if [ $? -eq 0 ]
+then
+echo ENDING PARENT SCRIPT
+exit 0
+sleep 2
+else
+echo NO FILE
+fi
