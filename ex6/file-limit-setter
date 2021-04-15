@@ -1,0 +1,14 @@
+#!/bin/bash
+#_______________________________________#
+#Author: VASANTH
+#_______________________________________#
+#Description: To set the file limit to 10000
+#_______________________________________#
+#Date: Wednesday 14 April 2021 07:00:12 PM IST
+#_______________________________________#
+
+
+sudo sysctl -w fs.file-max=10000 &> /dev/null
+echo FILE LIMIT
+cat /proc/sys/fs/file-max
+echo FILE LIMIT SET
