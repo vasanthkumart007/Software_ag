@@ -1,0 +1,30 @@
+#!/bin/bash
+#_______________________________________#
+#Author: VASANTH
+#_______________________________________#
+#Description: To create a swap file
+#_______________________________________#
+#Date: Thursday 15 April 2021 11:21:41 AM IST
+#_______________________________________#
+
+echo Swap File Creation
+
+sudo fallocate -l 512M /swapfile
+
+echo Creating Swap
+
+sudo chmod 600 /swapfile &> /dev/null
+sudo chown root:root /swapfile &> /dev/null
+
+sudo mkswap /swapfile
+
+sudo swapon /swapfile 
+
+echo SWAP FILE CREATED SUCCESSFULLY
+
+echo VIEWING DIRECTORY...
+echo --------------------
+free -h
+echo --------------------
+sudo swapon -s
+echo --------------------
